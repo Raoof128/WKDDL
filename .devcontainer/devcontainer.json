@@ -1,0 +1,22 @@
+{
+    "name": "WKDDL",
+    "image": "mcr.microsoft.com/devcontainers/cpp:1",
+    "features": {
+        "ghcr.io/devcontainers/features/cmake:1": {},
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "postCreateCommand": "cmake -S . -B build -DENABLE_HOST_TESTS=ON",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "cmake.generator": "Ninja",
+                "C_Cpp.clang_format_fallbackStyle": "LLVM"
+            },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.gitlens"
+            ]
+        }
+    }
+}

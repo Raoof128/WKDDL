@@ -1,0 +1,23 @@
+# Build artifacts
+build/
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.sys
+*.dll
+*.lib
+*.log
+*.user
+*.aps
+*.ncb
+*.suo
+ipch/
+Debug/
+Release/
+.vs/
+
+# OS files
+Thumbs.db
+.DS_Store
+
